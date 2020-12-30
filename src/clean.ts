@@ -1,4 +1,4 @@
-function run(): void {
+export default function (): void {
     for (var name in Memory.creeps) {
         if (!Game.creeps[name]) {
             delete Memory.creeps[name];
@@ -6,7 +6,3 @@ function run(): void {
         }
     }
 }
-
-export default {
-    run
-};
