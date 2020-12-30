@@ -1,10 +1,15 @@
+import './wheel/structercache'
+import './wheel/creepmove'
+
 import clean from './clean'
+import genpixel from './genpixel'
 import structure_spawn from './spawn'
 import harvester from './harvester'
 import upgrader from './upgrader'
 
 module.exports.loop = function (): void {
     clean();
+    genpixel();
 
     structure_spawn(Game.spawns["Spawn1"]);
 
